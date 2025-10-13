@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flutter UI Lab Portfolio - Lakshyadeep</title>
+    <script type="module" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/college_logo.png" alt="College Logo">
+            </div>
+            <div class="header-text">
+                <h1>User Interface Using Flutter Lab Portfolio</h1>
+                <p>Department of Information Technology • Academic Year 2025-26</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Home Page -->
+    <section id="homePage" class="fade-section">
+        <!-- Student Info -->
+        <div class="student-info">
+            <div class="student-header">
+                <div class="student-photo">
+                    <img src="images/profile.jpg" alt="Student Photo">
+                </div>
+                <div class="student-text">
+                    <h2>Student Information</h2>
+                    <hr class="divider">
+                    <p><strong>Name:</strong> Lakshyadeep</p>
+                    <p><strong>Roll No:</strong> 238W1A1229</p>
+                    <p><strong>Branch:</strong> Information Technology</p>
+                    <p><strong>Year:</strong> 3rd Year</p>
+                    <p><strong>Section:</strong> IT-A</p>
+                    <p><strong>Academic Year:</strong> 2025-2026</p>
+                    <p><strong>Subject:</strong> User Interface Using Flutter Lab</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lab Tasks Table -->
+        <div class="lab-tasks">
+            <h2>Lab Tasks</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>S.No</th>
+                        <th>Title</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr onclick="showTask(1)">
+                        <td>1</td>
+                        <td>Week 1 - FLUTTER BASIC CONCEPTS</td>
+                        <td>26/06/2025</td>
+                    </tr>
+                    <tr onclick="showTask(2)">
+                        <td>2</td>
+                        <td>Week 2 - Installations & Basic programming concepts</td>
+                        <td>31/07/2025</td>
+                    </tr>
+                    <tr onclick="showTask(3)">
+                        <td>3</td>
+                        <td>Week 3 - Installation of Android Studio in Ubuntu, Display Text and Image using Container</td>
+                        <td>07/08/2025</td>
+                    </tr>
+                    <tr onclick="showTask(4)">
+                        <td>4</td>
+                        <td>Week 4 - Implement various layout structures using Row, Column, Stack widgets</td>
+                        <td>14/08/2025</td>
+                    </tr>
+                    <tr onclick="showTask(5)">
+                        <td>5</td>
+                        <td>Week 5 - Adaptable UI for different screen sizes</td>
+                        <td>21/08/2025</td>
+                    </tr>
+                    <tr onclick="showTask(6)">
+                        <td>6</td>
+                        <td>Week 6 - Navigation between multiple screens, Form validation and displaying error messages</td>
+                        <td>28/08/2025</td>
+                    </tr>
+                    <tr onclick="showTask(7)">
+                        <td>7</td>
+                        <td>Week 7 - Creating, Styling Custom Widgets and Adding Animations to Enhance UX</td>
+                        <td>18/09/2025</td>
+                    </tr>
+                    <tr onclick="showTask(8)">
+                        <td>8</td>
+                        <td>Week 8 - Creation of login screen, profile card and a program with all widgets</td>
+                        <td>09/10/2025</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Task Page -->
+    <section id="taskPage" class="fade-section" style="display: none;">
+        <button class="back-btn" onclick="goBack()">⬅ Back</button>
+        <h2 id="taskTitle"></h2>
+        <div id="taskContent"></div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>Developed by <strong>Lakshyadeep</strong> | Roll No: 238W1A1229</p>
+            <p>Information Technology - IT-A | 2025 - 2026</p>
+            <p class="footer-credit">© 2025 Velagapudi Ramakrishna Siddhartha Engineering College. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

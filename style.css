@@ -1,0 +1,447 @@
+/* =====================================
+   GLOBAL RESET & BASE STYLES
+===================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f2f6fc;
+    color: #333;
+}
+
+#taskContent {
+    white-space: pre-wrap;
+    line-height: 1.6;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* =====================================
+   HEADER SECTION
+===================================== */
+header {
+    background: #0066cc;
+    color: white;
+    text-align: center;
+    padding: 10px 5px;
+}
+
+header .logo img {
+    width: 20px;
+    height:auto;
+    margin-bottom: 10px;
+}
+
+/* =====================================
+   STUDENT INFO CARD
+===================================== */
+.student-info {
+    background: white;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.student-info h2 {
+    color: #0066cc;
+    margin-bottom: 10px;
+}
+
+.student-info p {
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+.student-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.student-photo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    object-fit: cover;
+    border: 4px solid #0066cc;
+}
+
+.student-text {
+    flex: 1;
+}
+
+/* =====================================
+   LAB TASK TABLE
+===================================== */
+.lab-tasks {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+}
+
+.lab-tasks h2 {
+    color: #0066cc;
+    margin-bottom: 15px;
+}
+
+.lab-tasks table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.lab-tasks th,
+.lab-tasks td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.lab-tasks tr:hover {
+    background: #eaf2fc;
+    cursor: pointer;
+}
+
+/* =====================================
+   TASK PAGE
+===================================== */
+#taskPage {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#taskTitle {
+    color: #0066cc;
+    margin-bottom: 15px;
+}
+
+.back-btn {
+    background: #0066cc;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: #0052a3;
+}
+
+/* =====================================
+   PROGRAM BUTTONS & OUTPUT
+===================================== */
+.program-btn {
+    background: #00a86b;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.program-btn:hover {
+    background: #008f5b;
+}
+
+.program-block {
+    margin-bottom: 25px;
+    padding: 15px;
+    background: #f8faff;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.program-block h3 {
+    color: #0066cc;
+    margin-bottom: 10px;
+}
+
+.run-btn {
+    background: #00a86b;
+    color: white;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.run-btn:hover {
+    background: #008f5b;
+}
+
+.output-div {
+    margin-top: 15px;
+}
+
+.output-image {
+    width: 200%;
+    max-width: 400px;
+    display: block;
+    border: 2px solid #0066cc;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* =====================================
+   CODE BOX
+===================================== */
+.code-box {
+    background: #f4f4f4;
+    padding: 15px;
+    margin-top: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    white-space: pre-wrap;
+    border-left: 4px solid #0066cc;
+    border-radius: 5px;
+}
+
+/* =====================================
+   WEEK THEORY CONTENT (e.g. Week 3)
+===================================== */
+h2 {
+    color: #2c3e50;
+    margin-top: 20px;
+}
+
+h3 {
+    color: #34495e;
+    margin-top: 15px;
+}
+
+p,
+ul,
+ol {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+ul,
+ol {
+    margin-left: 20px;
+}
+
+pre {
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 6px;
+    overflow-x: auto;
+}
+
+code {
+    font-family: 'Courier New', monospace;
+    color: #e74c3c;
+}
+
+a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    margin: 25px 0;
+    border: 1px solid #ccc;
+}
+
+/* =====================================
+   RESPONSIVE DESIGN
+===================================== */
+@media (max-width: 600px) {
+    .student-info,
+    .lab-tasks,
+    #taskPage {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .lab-tasks table th,
+    .lab-tasks table td {
+        padding: 8px;
+    }
+}
+
+/* HEADER - Enhanced Gradient Background */
+header {
+    background: linear-gradient(90deg, #0066cc, #004b99);
+    color: white;
+    padding: 25px 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: background 0.5s ease-in-out;
+}
+
+header:hover {
+    background: linear-gradient(90deg, #0052a3, #003366);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+header .logo img {
+    width: 830px;
+    height: auto;
+    border-radius: 10px;
+    background: white;
+    padding: 5px;
+}
+
+.header-text h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.header-text p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* STUDENT INFO CARD - Glow on Hover */
+.student-info {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.student-info:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 8px 20px rgba(0, 102, 204, 0.2);
+}
+
+.divider {
+    border: none;
+    height: 2px;
+    background: #0066cc;
+    margin: 8px 0 12px 0;
+}
+
+/* TABLE ENHANCEMENTS */
+.lab-tasks {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lab-tasks:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 8px 20px rgba(0, 102, 204, 0.15);
+}
+
+.lab-tasks table {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.lab-tasks thead {
+    background: #0066cc;
+    color: white;
+}
+
+.lab-tasks tr {
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.lab-tasks tr:hover {
+    background: #e0efff;
+    transform: scale(1.01);
+}
+
+/* Buttons */
+.back-btn {
+    background: linear-gradient(90deg, #0066cc, #004b99);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: 0.3s ease;
+}
+
+.back-btn:hover {
+    background: linear-gradient(90deg, #0052a3, #003366);
+    transform: scale(1.05);
+}
+
+/* RESPONSIVE FIXES */
+@media (max-width: 600px) {
+    .header-container {
+        flex-direction: column;
+    }
+    header .logo img {
+        width: 100px;
+    }
+    .header-text h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* =============================
+   FADE TRANSITION EFFECTS
+============================= */
+.fade-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* =============================
+   FOOTER SECTION
+============================= */
+footer {
+    background: linear-gradient(90deg, #004b99, #0066cc);
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    margin-top: 30px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content p {
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+.footer-credit {
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+footer:hover {
+    background: linear-gradient(90deg, #003366, #0052a3);
+    transition: background 0.5s ease-in-out;
+}
+
+/* Responsive footer */
+@media (max-width: 600px) {
+    .footer-content p {
+        font-size: 13px;
+    }
+}
